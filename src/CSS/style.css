@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../FONT/Raleway-VariableFont_wght.ttf");
+}
+
+body {
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-right: 50px;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 0;
+}
+
+.headNav {
+  color: azure;
+}
