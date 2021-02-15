@@ -13,13 +13,13 @@
     <!-- header de la page  -->
     <header id="header">
         <a href="#">
-            <img class="headerImg" src="logo/Reservia.svg" alt="Reservia" />
+            <img class="headerImg" src="logo/Reservialogo.svg" alt="Reservia" />
         </a>
 
 
         <nav class="headNav">
 
-            <a href="#">Hébergements</a>
+            <a class="activeHover"href="#" data-active="true">Hébergements</a>
             <a href="#">Activités</a>
             <a href="#" class="signup">S'inscrire</a>
         </nav>
@@ -33,19 +33,16 @@
         <h2>Filtres</h2>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
         <!-- Recherche  -->
-        <section class="hebergement">
-            <h2>Hébergement à Marseille</h2>
-            <div class="flex-container wrap" id="wrap">
-                <div class="item" data-color="2a80b9" style="background-color: rgb(42, 128, 185);"><p>1</p></div>
-                <div class="item" data-color="8f44ad" style="background-color: rgb(143, 68, 173);"><p>2</p></div>
-                <div class="item" data-color="16a086" style="background-color: rgb(22, 160, 134);"><p>3</p></div>
-                <div class="item" data-color="f1c40f" style="background-color: rgb(241, 196, 15);"><p>4</p></div>
-                <div class="item" data-color="e77e23" style="background-color: rgb(231, 126, 35);"><p>5</p></div>
-                </div>
+        <section class="hebergementGrid">
+            <div class="hostGrid">
+                <header class="headHost">
+                    <h2>Hébergement à Marseille</h2>
 
-            <class class="conteneur">
+                </header>
 
-                <div class="property-card">
+
+
+                <article class="property-card">
                     <a href="#">
                         <div class="property-image">
                             <div class="property-image-title">
@@ -55,15 +52,15 @@
                     </a>
                     <div class="property-description">
                         <h5> Auberge la Cannebière </h5>
-                        <p>Nuit a partir de <strong>25€</p>
+                        <p>Nuit a partir de 25€</p>
                     </div>
                     <a href="#">
                         <div class="property-social-icons">
                             <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
                         </div>
                     </a>
-                </div>
-                <div class="property-card">
+                </article>
+                <article class="property-card">
                     <a href="#">
                         <div class="property-image">
                             <div class="property-image-title">
@@ -73,7 +70,8 @@
                     </a>
                     <div class="property-description">
                         <h5> Card Title </h5>
-                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
+                            be
                             hard.</p>
                     </div>
                     <a href="#">
@@ -81,34 +79,167 @@
                             <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
                         </div>
                     </a>
-                </div>
+                </article>
+                <article class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <div class="property-image-title">
+                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+                        <h5> Card Title </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
+                            be
+                            hard.</p>
+                    </div>
+                    <a href="#">
+                        <div class="property-social-icons">
+                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        </div>
+                    </a>
+                </article>
+                <article class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <div class="property-image-title">
+                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+                        <h5> Card Title </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
+                            be
+                            hard.</p>
+                    </div>
+                    <a href="#">
+                        <div class="property-social-icons">
+                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        </div>
+                    </a>
+                </article>
+                <article class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <div class="property-image-title">
+                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+                        <h5> Card Title </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
+                            be
+                            hard.</p>
+                    </div>
+                    <a href="#">
+                        <div class="property-social-icons">
+                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        </div>
+                    </a>
+                </article>
+                <article class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <div class="property-image-title">
+                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+                        <h5> Card Title </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
+                            be
+                            hard.</p>
+                    </div>
+                    <a href="#">
+                        <div class="property-social-icons">
+                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        </div>
+                    </a>
+                </article>
 
+                <a class="afficherPlus" href="#">afficher plus</a>
 
-            </class>
-            <article>
+                
 
-                <a href="#">
-                    <figure>
-                        <img src="img/hebergements/4_small/test1.jpg" alt="logo de l'Auberge la Cannebière">
-                        <figcaption>
-                            <h3>Auberge la Cannebière</h3>
-                        </figcaption>
-                    </figure>
-                    <p>Nuit a partir de <strong>25€</strong></p>
-                </a>
-            </article>
+            </div>
             </div>
 
 
+
             <!-- Hebergements  -->
 
 
-            <p>afficher plus</p>
+            
             <!-- Hebergements  -->
 
-            <aside>
+            <aside class="asidePop">
                 <h2>Les plus populaires</h2>
+                <article class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <div class="property-image-title">
+                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+                        <h5> Card Title </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
+                            be
+                            hard.</p>
+                    </div>
+                    <a href="#">
+                        <div class="property-social-icons">
+                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        </div>
+                    </a>
+                </article>
+                <article class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <div class="property-image-title">
+                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+                        <h5> Card Title </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
+                            be
+                            hard.</p>
+                    </div>
+                    <a href="#">
+                        <div class="property-social-icons">
+                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        </div>
+                    </a>
+                </article>
+                <article class="property-card">
+                    <a href="#">
+                        <div class="property-image">
+                            <div class="property-image-title">
+                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+                            </div>
+                        </div>
+                    </a>
+                    <div class="property-description">
+                        <h5> Card Title </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
+                            be
+                            hard.</p>
+                    </div>
+                    <a href="#">
+                        <div class="property-social-icons">
+                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        </div>
+                    </a>
+                </article>
             </aside>
+            
 
 
         </section>
@@ -157,6 +288,9 @@
     <!-- footer de la page  -->
     <footer class="footer">
         <h3>A propos</h3>
+        <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+        </ul>
         <a href="#">Fonctionnement du site</a>
         <a href="#">Conditions générales de vente</a>
         <a href="#">Données et confidentialités</a>
