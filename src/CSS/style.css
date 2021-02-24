@@ -21,9 +21,30 @@ body {
   row-gap: 2rem;
   column-gap: 2rem;
 }
+@media (max-width: 550px) {
+  .hebergementGrid {
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  }
+  .hostGrid {
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  }
+}
+@media (max-width: 300px) {
+  .containeurFooter {
+    flex-direction: column;
+  }
+}
+@media (min-width: 560px) {
+  .hebergementGrid {
+    grid-template-columns: 6fr 3fr;
+  }
+  .hostGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .hostGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
   background-color: #f2f2f2;
@@ -321,8 +342,7 @@ button {
   padding: 0 2rem;
   box-sizing: border-box;
 }
-
-.about,
+.containeurFooter .about,
 .hostLink,
 .help {
   width: 30%;
