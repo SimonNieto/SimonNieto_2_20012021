@@ -12,7 +12,7 @@
 <body>
 
     <!-- header de la page  -->
-    <header id="header">
+    <header class="header">
         <a href="#">
             <img class="headerImg" src="logo/Reservialogo.svg" alt="Reservia" />
         </a>
@@ -43,32 +43,32 @@
                 <div class="container-2">
                     <div class="filtreHeberg">
                         <h2 class="titreSearch">Filtres</h2>
-                        <div class="searchFiltersFilter">
-                            <div class="searchFiltersFilterWrapicon">
+                        <div class="searchFilter">
+                            <div class="searchFiltersicon">
                                 <i class="fas fa-money-bill-wave searchFiltersFilterWrapiconIcon"></i>
                             </div>
-                            <span class="searchFiltersFilterTitle">Économique</span>
+                            <span class="searchFilterTitle">Économique</span>
                         </div>
-                        <div class="searchFiltersFilter">
-                            <div class="searchFiltersFilterWrapicon">
+                        <div class="searchFilter">
+                            <div class="searchFiltersicon">
                                 <i class="fas fa-child searchFiltersFilterWrapiconIcon"></i>
                             </div>
-                            <span class="searchFiltersFilterTitle">Familial</span>
+                            <span class="searchFilterTitle">Familial</span>
                         </div>
-                        <div class="searchFiltersFilter">
-                            <div class="searchFiltersFilterWrapicon">
+                        <div class="searchFilter">
+                            <div class="searchFiltersicon">
                                 <i class="fas fa-heart searchFiltersFilterWrapiconIcon"></i>
                             </div>
-                            <span class="searchFiltersFilterTitle">Romantique</span>
+                            <span class="searchFilterTitle">Romantique</span>
                         </div>
-                        <div class="searchFiltersFilter">
-                            <div class="searchFiltersFilterWrapicon">
+                        <div class="searchFilter">
+                            <div class="searchFiltersicon">
                                 <i class="fas fa-dog searchFiltersFilterWrapiconIcon"></i>
                             </div>
-                            <span class="searchFiltersFilterTitle">Animaux autorisés</span>
+                            <span class="searchFilterTitle">Animaux autorisés</span>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -99,10 +99,10 @@
                             <img src="./IMG/hebergements/4_small/test1.jpg" alt="">
                         </div>
                     </a>
-                    <div class="property-description">
+                    <a href="#" class="property-description">
                         <h5> Auberge la Cannebière </h5>
-                        <p>Nuit à partir de <strong class="hostingMainCardDescPrice">25€</strong></p>
-                    </div>
+                        <p>Nuit à partir de <strong class="">25€</strong></p>
+                    </a>
                     <a href="#">
                         <div class="property-social-icons">
                             <div class="hostingMainCardGrade">
@@ -127,10 +127,10 @@
                             <img src="./IMG/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                         </div>
                     </a>
-                    <div class="property-description">
+                    <a href="#" class="property-description">
                         <h5> Hôtel du port </h5>
                         <p>Nuit à partir de <strong ">52€</strong></p>
-                    </div>
+                    </a>
                     <a href=" #">
                                 <div class="property-social-icons">
                                     <div class="hostingMainCardGrade">
@@ -155,10 +155,10 @@
                             <img src="./IMG/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                         </div>
                     </a>
-                    <div class="property-description">
+                    <a href="#" class="property-description">
                         <h5> Hôtel Les mouettes </h5>
                         <p>Nuit à partir de <strong ">76€</strong></p>
-                    </div>
+                    </a>
                     <a href=" #">
                                 <div class="property-social-icons">
                                     <div class="hostingMainCardGrade">
@@ -184,10 +184,10 @@
                             <img src="./IMG/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
                         </div>
                     </a>
-                    <div class="property-description">
+                    <a href="#" class="property-description">
                         <h5>Auberge de la mer </h5>
                         <p>Nuit à partir de <strong>46€</strong></p>
-                    </div>
+                    </a>
                     <a href="#">
                         <div class="property-social-icons">
                             <div class="hostingMainCardGrade">
@@ -214,10 +214,10 @@
 
                         </div>
                     </a>
-                    <div class="property-description">
+                    <a href="#" class="property-description">
                         <h5> Auberge Le Panier </h5>
                         <p>Nuit à partir de <strong>23€</strong></p>
-                    </div>
+                    </a>
                     <a href="#">
                         <div class="property-social-icons">
                             <div class="hostingMainCardGrade">
@@ -243,10 +243,10 @@
                             <img src="./IMG/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                         </div>
                     </a>
-                    <div class="property-description">
+                    <a href="#" class="property-description">
                         <h5>Hôtel chez Amina </h5>
                         <p>Nuit à partir de <strong>96€</strong></p>
-                    </div>
+                    </a>
                     <a href="#">
                         <div class="property-social-icons">
                             <div class="hostingMainCardGrade">
@@ -266,7 +266,7 @@
                     </a>
                 </article>
 
-                <a class="afficherPlus" href="#">afficher plus</a>
+                <a class="afficherPlus" href="#">Afficher plus</a>
 
 
 
@@ -282,67 +282,82 @@
             <!-- Hebergements  -->
 
             <aside class="asidePop">
-                <h2>Les plus populaires</h2>
-
-                <article class="fixingcard">
-                    <a href="#">
-                        <div class="property-image">
-                            <div class="property-image-title">
-                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                            </div>
+                <h2 class="titleAside">Les plus populaire <i class="fas fa-chart-line"></i></h2>
+                <article class="hostingPopCard">
+                    <a class="hostingPopularWrapcontent" href="#">
+                        <div class="hostingPopularWrapimg">
+                            <img class="hostingPopularWrapimgimg"
+                                src="./IMG/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville.">
                         </div>
-                    </a>
-                    <div class="property-description">
-                        <h5> Card Title </h5>
-                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
-                            be
-                            hard.</p>
-                    </div>
-                    <a href="#">
-                        <div class="property-social-icons">
-                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        <div class="asidePopContent">
+                            <h3 class="hostingMainCardFigureCaptionTitle">Hôtel Le soleil du matin</h3>
+                            <p class="hostingMainCardDesc">Nuit à partir de <strong class="">128€</strong></p>
+                            <div class="asidePopContentWhitespace"></div>
+                            <div class="hostingMainCardGrade">
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                            </div>
                         </div>
                     </a>
                 </article>
-
-
-                <article class="property-card2">
-                    <a href="#">
-                        <div class="property-image">
-                            <div class="property-image-title">
-                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                            </div>
+                <article class="hostingPopCard">
+                    <a class="hostingPopularWrapcontent" href="#">
+                        <div class="hostingPopularWrapimg">
+                            <img class="hostingPopularWrapimgimg"
+                                src="./IMG/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville.">
                         </div>
-                    </a>
-                    <div class="property-description">
-                        <h5> Card Title </h5>
-                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
-                            be
-                            hard.</p>
-                    </div>
-                    <a href="#">
-                        <div class="property-social-icons">
-                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        <div class="asidePopContent">
+                            <h3 class="hostingMainCardFigureCaptionTitle">Hôtel Le soleil du matin</h3>
+                            <p class="hostingMainCardDesc">Nuit à partir de <strong class="">128€</strong></p>
+                            <div class="asidePopContentWhitespace"></div>
+                            <div class="hostingMainCardGrade">
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                            </div>
                         </div>
                     </a>
                 </article>
-                <article class="property-card2">
-                    <a href="#">
-                        <div class="property-image">
-                            <div class="property-image-title">
-                                <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                            </div>
+                <article class="hostingPopCard">
+                    <a class="hostingPopularWrapcontent" href="#">
+                        <div class="hostingPopularWrapimg">
+                            <img class="hostingPopularWrapimgimg"
+                                src="./IMG/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville.">
                         </div>
-                    </a>
-                    <div class="property-description">
-                        <h5> Card Title </h5>
-                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
-                            be
-                            hard.</p>
-                    </div>
-                    <a href="#">
-                        <div class="property-social-icons">
-                            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                        <div class="asidePopContent">
+                            <h3 class="hostingMainCardFigureCaptionTitle">Hôtel Le soleil du matin</h3>
+                            <p class="hostingMainCardDesc">Nuit à partir de <strong class="">128€</strong></p>
+                            <div class="asidePopContentWhitespace"></div>
+                            <div class="hostingMainCardGrade">
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                            </div>
                         </div>
                     </a>
                 </article>
@@ -351,160 +366,114 @@
 
 
         </section>
-        <section class="activity">
-            <h2>Activités à Marseille</h2>
+   
+
+
+
+
+
+
+
+        <section class="activity" id="activity">
+            <h2 class="activityTitle">Activités à Marseille</h2>
+            <a href="#" class="activityCard activityCard1">
+              <div class="activityCardWrapimg">
+                <img class="activityCardWrapimgImg" src="./IMG/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan">
+              </div>
+              <h3 class="activityCardTitle">Vieux Port</h3>
+            </a>
+            <a href="#" class="activityCard activityCard2">
+              <div class="activityCardWrapimg">
+                <img class="activityCardWrapimgImg" src="./IMG/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Desert rocailleux beige avec un fort elle aussi beige un peu plus loin dans l'image">
+              </div>
+              <h3 class="activityCardTitle">Fort de Pomègues</h3>
+            </a>
+            <a href="#" class="activityCard activityCard3">
+              <div class="activityCardWrapimg">
+                <img class="activityCardWrapimgImg" src="./IMG/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Paysage mélengeant roche et verdure en premier plan et une grande mer bleu en second plan">
+              </div>
+              <h3 class="activityCardTitle">Parc National des Calanques</h3>
+            </a>
+            <a href="#" class="activityCard activityCard4">
+              <div class="activityCardWrapimg">
+                <img class="activityCardWrapimgImg" src="./IMG/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Grande ville assez plate mais doté d'une colline qui mets en valeur un bâtiment, certainement religieux">
+              </div>
+              <h3 class="activityCardTitle">Notre-Dame-de-la-Garde</h3>
+            </a>
+            <a href="#" class="activityCard activityCard5">
+              <div class="activityCardWrapimg">
+                <img class="activityCardWrapimgImg" src="./IMG/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Longue vue sur terre en premier plan, mer en second plan et ile en troisième plan">
+              </div>
+              <h3 class="activityCardTitle">Île du Frioul</h3>
+            </a>
+            <a href="#" class="activityCard activityCard6">
+              <div class="activityCardWrapimg">
+                <img class="activityCardWrapimgImg" src="./IMG/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Majestueux batiment au pierres blanches dôté d'une fontaine, tout autant majestueuse">
+              </div>
+              <h3 class="activityCardTitle">Parc Longchamp</h3>
+            </a>
+          </section>
+
+
+        <!-- <section class="activity">
+            <h2 class="titleActivity">Activités à Marseille</h2>
             <div class="grid-container">
-                <div class="card-1">
-                    <article class="property-card">
-                        <a href="#">
-                            <div class="property-image">
-                                <div class="property-image-title">
-                                    <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                                </div>
-                            </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Card Title </h5>
-                            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
-                                be
-                                hard.</p>
-                        </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                            </div>
-                        </a>
-                    </article>
-                </div>
-                <div class="cardd-2">
-                    <article class="property-card">
-                        <a href="#">
-                            <div class="property-image">
-                                <div class="property-image-title">
-                                    <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                                </div>
-                            </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Card Title </h5>
-                            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
-                                be
-                                hard.</p>
-                        </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                            </div>
-                        </a>
-                    </article>
-                    </article>
-                </div>
-                <div class="card-3">
-                    <article class="property-card">
-                        <a href="#">
-                            <div class="property-image">
-                                <div class="property-image-title">
-                                    <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                                </div>
-                            </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Card Title </h5>
-                            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
-                                be
-                                hard.</p>
-                        </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                            </div>
-                        </a>
-                    </article>
-                </div>
-                <div class="card-4">
-                    <article class="property-card">
-                        <a href="#">
-                            <div class="property-image">
-                                <div class="property-image-title">
-                                    <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                                </div>
-                            </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Card Title </h5>
-                            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
-                                be
-                                hard.</p>
-                        </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                            </div>
-                        </a>
-                    </article>
-                </div>
-                <div class="card-5">
-                    <article class="property-card">
-                        <a href="#">
-                            <div class="property-image">
-                                <div class="property-image-title">
-                                    <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                                </div>
-                            </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Card Title </h5>
-                            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
-                                be
-                                hard.</p>
-                        </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                            </div>
-                        </a>
-                    </article>
-                </div>
-                <div class="card-6">
-                    <article class="property-card">
-                        <a href="#">
-                            <div class="property-image">
-                                <div class="property-image-title">
-                                    <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
-                                </div>
-                            </div>
-                        </a>
-                        <div class="property-description">
-                            <h5> Card Title </h5>
-                            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth
-                                be
-                                hard.</p>
-                        </div>
-                        <a href="#">
-                            <div class="property-social-icons">
-                                <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                            </div>
-                        </a>
-                    </article>
-                </div>
+        
+                <a href="#" class="card-1">
+                    <div class="activityCardWrapimg">
+                        <img class="activityCardWrapimgImg"
+                            src="./IMG/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan">
+                    </div>
+                    <h3 class="activityCardTitle">Vieux Port</h3>
+                </a>
+                <a class="card-3">
+                    <div class="activityCardWrapimg">
+                        <img class="activityCardWrapimgImg"
+                            src="./IMG/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                            alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan">
+                    </div>
+                    <h3 class="activityCardTitle">Vieux Port</h3>
+                </a>
+                <a class="card-4">
+                    <div class="activityCardWrapimg">
+                        <img class="activityCardWrapimgImg"
+                            src="./IMG/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan">
+                    </div>
+                    <h3 class="activityCardTitle">Vieux Port</h3>
+                </a>
+                <a class="card-5">
+                    <div class="activityCardWrapimg">
+                        <img class="activityCardWrapimgImg"
+                            src="./IMG/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan">
+                    </div>
+                    <h3 class="activityCardTitle">Vieux Port</h3>
+                </a>
+                <a class="card-7">
+                    <div class="activityCardWrapimg">
+                        <img class="activityCardWrapimgImg"
+                            src="./IMG/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                            alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan">
+                    </div>
+                    <h3 class="activityCardTitle">Vieux Port</h3>
+                </a>
+                <a class="card-8">
+                    <div class="activityCardWrapimg">
+                        <img class="activityCardWrapimgImg"
+                            src="./IMG/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                            alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan">
+                    </div>
+                    <h3 class="activityCardTitle">Vieux Port</h3>
+                </a>
             </div>
             <!-- Activités  -->
-
-
-
-
-
-            <article>
-                <a href="#">
-                    Île du Frioul
-                </a>
-            </article>
-            <article>
-                <a href="#">
-                    Parc Longchamp
-                </a>
-            </article>
-
+        
+        
+        
+        
+        
             <!-- Activités  -->
         </section>
 
