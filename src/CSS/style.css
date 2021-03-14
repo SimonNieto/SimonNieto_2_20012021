@@ -37,7 +37,7 @@ a {
   border-radius: 1.5rem;
   padding: 0.5rem 2rem 2rem 2rem;
 }
-.asidePop .property-card {
+/* .asidePop .property-card {
   width: 25em;
   height: 10em;
   display: flex;
@@ -45,14 +45,12 @@ a {
 .asidePop .property-image {
   width: 25em;
   height: 10em;
-}
+} */
 .header {
   display: grid;
   align-items: center;
   max-width: 1440px;
   margin: auto;
-  grid-template-columns: auto 1fr auto auto;
-  grid-template-areas: "logo . navbar";
 }
 
 .headHost {
@@ -72,10 +70,8 @@ a {
 
 .headNav {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
+  grid-area: navbar;
 }
 .headNav a {
   padding: 2rem;
@@ -83,13 +79,21 @@ a {
   color: #555;
   font-weight: 500;
 }
-.activeHover[data-active="true"] {
+/* .activeHover[data-active="true"] {
   border-top: 3px solid #0065fc;
   color: #0065fc;
-}
+} */
 .headNav a:hover {
   border-top: 3px solid #0065fc;
   color: #0065fc;
+}
+.signup {
+  display: flex;
+  align-items: center;
+  grid-area: button;
+  padding: 2rem;
+  color: #0065fc;
+  font-weight: 600;
 }
 
 /* .hebergement {
@@ -131,55 +135,38 @@ h2 {
 /* End Non-Essential  */
 
 .property-card {
-  height: 18em;
-  width: 14em;
-  position: relative;
+  /* height: 18em;
+  width: 14em; */
+  /* position: relative; */
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 0 16px #0000002e;
   border: 6px solid rgba(255, 255, 255, 0.95);
   border-radius: 20px;
   background-color: white;
+  height: 100%;
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
 /* Top Half of card, image. */
 
 .property-image {
-  height: 12em;
-  width: 14em;
-  text-align: center;
-  position: Absolute;
-  display: flex;
-  top: 0px;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
 }
 
 /* Bottom Card Section */
-
-.property-description {
-  background-color: white;
-  height: 6em;
-  width: 16em;
-  position: absolute;
-  bottom: -2em;
-  -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 0.5em 1em;
-}
 
 /* Social Icons */
 
 .property-social-icons {
   width: 1em;
-  height: 1em;
+  height: 0em;
   color: #0065fc;
-  position: absolute;
+
   bottom: 0.1em;
   left: 0.2em;
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -187,6 +174,9 @@ h2 {
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.property-description {
+  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
 .property-description p {
   margin: 0;
 }
@@ -216,10 +206,10 @@ footer {
   width: 100%;
 }
 
-.hostGrid .property-card {
+/* .hostGrid .property-card {
   height: 15em;
   width: 16em;
-}
+} */
 
 .afficherPlus {
   padding: 0;
@@ -228,20 +218,23 @@ footer {
 
 .headerImg {
   padding: 0 2rem;
+  grid-area: logo;
 }
 
 .container-1 {
-  display: flex;
+  display: inline-flex;
+  max-width: 100%;
+  overflow: auto;
 }
 .container-1 input#search {
   width: 300px;
   height: 50px;
-
+  padding: 0 1.5rem;
   border: none;
   font-size: 10pt;
   float: left;
   color: #63717f;
-  padding-left: 26px;
+
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -266,13 +259,12 @@ footer {
 }
 
 .container-1 .icon {
-  position: relative;
-  top: 50%;
-  margin-left: 17px;
-  margin-top: 17px;
-  margin-right: 17px;
-  z-index: 1;
+  padding-left: 17px;
+  padding-top: 17px;
+  padding-right: 17px;
+  border-radius: 1rem 0 0 1rem;
   color: #4f5b66;
+  background-color: #f2f2f2;
 }
 
 .container-1 input#search:hover,
@@ -280,6 +272,13 @@ footer {
 .container-1 input#search:active {
   outline: none;
   background: #fafafc;
+}
+
+@media screen and (max-width: 600px) {
+  .container-1 {
+    display: flex;
+    width: 100%;
+  }
 }
 
 button {
@@ -291,6 +290,23 @@ button {
   padding: 0 1.5rem;
   text-align: center;
   padding: 10px;
+}
+
+@media screen and (min-width: 601px) {
+  .button-twoText {
+    display: block;
+  }
+  .searchIcon {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .button-twoText {
+    display: none;
+  }
+  .searchIcon {
+    display: block;
+  }
 }
 
 .container-2 {
@@ -313,19 +329,16 @@ button {
   padding: 0 2rem;
   box-sizing: border-box;
 }
-.containeurFooter .about,
+.about,
 .hostLink,
 .help {
-  width: 30%;
-  padding: 2rem 2rem;
+  width: 100%;
+  padding: 2rem 1rem 1rem;
 }
 
 footer a {
   display: block;
   margin: 1rem 0;
-}
-
-.grid-container {
 }
 
 .card-1 {
@@ -352,14 +365,15 @@ footer a {
   grid-area: card-6;
 }
 
-.property-card img {
+/* .property-card img {
   width: 260px;
   object-fit: cover;
-}
+} */
 
 .hostingMainCardGrade {
   display: flex;
 }
+
 .hostingMainCardGradeIcon[data-active="false"] {
   color: #d9d9d9;
 }
@@ -411,6 +425,8 @@ h1 {
 
 .filtreHeberg {
   display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .searchFiltersicon {
@@ -643,14 +659,42 @@ h1 {
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo . navbar button";
   }
-}
-@media screen and (max-width: 600px) {
-  .header {
-    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+  .activeHover[data-active="true"] {
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
   }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 600px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "logo . button"
+      "navbar navbar navbar";
+  }
+  .headerImg {
+    order: 0;
+  }
+  .Signup {
+    order: 1;
+  }
+  .headNav {
+    order: 2;
+  }
+  .activeHover {
+    border-top: none;
+    border-bottom: 3px solid #f2f2f2;
+    width: 50%;
+  }
+  .activeHover[data-active="true"] {
+    border-bottom-color: #0065fc;
+  }
+  .activeHover:hover {
+    border-bottom-color: #0065fc;
+  }
+}
+
+@media (max-width: 650px) {
   .hebergementGrid {
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   }
@@ -658,12 +702,16 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   }
 }
-@media (max-width: 1000px) {
-  .filtreHeberg {
-    flex-direction: column;
-    margin
+@media (max-width: 650px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
   }
-  .searchFilter{
+}
+
+@media (max-width: 1000px) {
+  .searchFilter {
     margin-bottom: 5px;
   }
 }
@@ -684,7 +732,7 @@ h1 {
 
 @media (max-width: 1440px) {
   .hebergementGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 3fr;
     row-gap: 2rem;
   }
   .asidePop {
@@ -718,4 +766,3 @@ h1 {
     grid-template-rows: auto repeat(3, 9rem);
   }
 }
-
