@@ -13,10 +13,10 @@
 
     <!-- header de la page  -->
     <header class="header">
-    <img class="headerImg" src="./src/logo/Reservialogo.svg" alt="Reservia" />
+        <img class="headerImg" src="./src/logo/Reservialogo.svg" alt="Reservia" />
         <nav class="headNav">
-            <a class="activeHover" href="#" data-active="true">Hébergements</a>
-            <a class="activeHover" href="#" data-active="false">Activités</a>
+            <a class="activeHover" href="#host" data-active="true">Hébergements</a>
+            <a class="activeHover" href="#activity" data-active="false">Activités</a>
         </nav>
         <a class="signup" href="#">S'inscrire</a>
 
@@ -27,47 +27,47 @@
         <section class="headSearch">
             <h1 class="titreSearch">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="textSearch">En plein centre de ville ou en pleine nature</p>
-            
-                <form class="container-1">
-                    <span class="icon"><i class="fas fa-map-marker-alt "></i></span>
-                    <input type="search" id="search" placeholder="Marseille, France" size="1" />
-                    <button class="button-two">
-                        <span class="button-twoText">Rechercher</span>
-                        <i class="searchIcon fas fa-search" aria-hidden="true"></i>
-                    </button>
-                </form>
-                <div class="container-2">
-                    <div class="filtreHeberg">
-                        <h2 class="titreSearch">Filtres</h2>
-                        <div class="searchFilter">
-                            <div class="searchFiltersicon">
-                                <i class="fas fa-money-bill-wave "></i>
-                            </div>
-                            <span class="searchFilterTitle">Économique</span>
-                        </div>
-                        <div class="searchFilter">
-                            <div class="searchFiltersicon">
-                                <i class="fas fa-child "></i>
-                            </div>
-                            <span class="searchFilterTitle">Familial</span>
-                        </div>
-                        <div class="searchFilter">
-                            <div class="searchFiltersicon">
-                                <i class="fas fa-heart "></i>
-                            </div>
-                            <span class="searchFilterTitle">Romantique</span>
-                        </div>
-                        <div class="searchFilter">
-                            <div class="searchFiltersicon">
-                                <i class="fas fa-dog "></i>
-                            </div>
-                            <span class="searchFilterTitle">Animaux autorisés</span>
-                        </div>
-                    </div>
 
+            <form class="container-1">
+                <span class="icon"><i class="fas fa-map-marker-alt "></i></span>
+                <input type="search" id="search" placeholder="Marseille, France" size="1" />
+                <button class="button-two">
+                    <span class="button-twoText">Rechercher</span>
+                    <i class="searchIcon fas fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+            <div class="container-2">
+                <div class="filtreHeberg">
+                    <h2 class="titreSearch">Filtres</h2>
+                    <div class="searchFilter">
+                        <div class="searchFiltersicon">
+                            <i class="fas fa-money-bill-wave "></i>
+                        </div>
+                        <span class="searchFilterTitle">Économique</span>
+                    </div>
+                    <div class="searchFilter">
+                        <div class="searchFiltersicon">
+                            <i class="fas fa-child "></i>
+                        </div>
+                        <span class="searchFilterTitle">Familial</span>
+                    </div>
+                    <div class="searchFilter">
+                        <div class="searchFiltersicon">
+                            <i class="fas fa-heart "></i>
+                        </div>
+                        <span class="searchFilterTitle">Romantique</span>
+                    </div>
+                    <div class="searchFilter">
+                        <div class="searchFiltersicon">
+                            <i class="fas fa-dog "></i>
+                        </div>
+                        <span class="searchFilterTitle">Animaux autorisés</span>
+                    </div>
                 </div>
 
-            
+            </div>
+
+
             <div class="searchResult">
                 <div class="iconSearch">
                     <i class="fas fa-info " aria-hidden="true"></i>
@@ -81,7 +81,7 @@
         <!-- Recherche  -->
         <section class="hebergementGrid">
             <div class="hostGrid">
-                <header class="headHost">
+                <header class="headHost" id="host">
                     <h2>Hébergement à Marseille</h2>
 
                 </header>
@@ -90,16 +90,14 @@
 
                 <article class="property-card">
                     <a href="#">
+                        <img class="property-image" src="./src/IMG/hebergements/4_small/test1.jpg" alt="">
 
-                        
-                            <img class="property-image" src="./src/IMG/hebergements/4_small/test1.jpg" alt="">
-                        
-                    </a>
-                    <div class="property-description">
-                        <h5 class=""> Auberge la Cannebière </h5>
-                        <p>Nuit à partir de <strong class="">25€</strong></p>
-                    </div>
-                    <a href="#">
+
+                        <div class="property-description">
+                            <h5 class=""> Auberge la Cannebière </h5>
+                            <p>Nuit à partir de <strong class="">25€</strong></p>
+                        </div>
+
                         <div class="property-social-icons">
                             <div class="hostingMainCardGrade">
                                 <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
@@ -115,20 +113,21 @@
                             </div>
                         </div>
                     </a>
+
+
                 </article>
                 <article class="property-card">
                     <a href="#">
 
-                        <div class="property-image">
-                            <img src="./src/IMG/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="#" class="property-description">
-                        <h5> Hôtel du port </h5>
-                        <p>Nuit à partir de <strong ">52€</strong></p>
-                    </a>
-                    <a href=" #">
-                                <div class="property-social-icons">
+
+                        <img class="property-image"
+                            src="./src/IMG/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                        <div href="#" class="property-description">
+                            <h5> Hôtel du port </h5>
+                            <p>Nuit à partir de <strong ">52€</strong></p>
+                                    </div>
+                                    
+                                                <div class=" property-social-icons">
                                     <div class="hostingMainCardGrade">
                                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
                                             aria-hidden="true"></i>
@@ -141,22 +140,23 @@
                                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
                                             aria-hidden="true"></i>
                                     </div>
-                                </div>
+                        </div>
                     </a>
+
+
                 </article>
                 <article class="property-card">
                     <a href="#">
 
-                        <div class="property-image">
-                            <img src="./src/IMG/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="#" class="property-description">
-                        <h5> Hôtel Les mouettes </h5>
-                        <p>Nuit à partir de <strong ">76€</strong></p>
-                    </a>
-                    <a href=" #">
-                                <div class="property-social-icons">
+
+                        <img class="property-image"
+                            src="./src/IMG/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                        <div href="#" class="property-description">
+                            <h5> Hôtel Les mouettes </h5>
+                            <p>Nuit à partir de <strong ">76€</strong></p>
+                    </div>
+                    
+                                <div class=" property-social-icons">
                                     <div class="hostingMainCardGrade">
                                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
                                             aria-hidden="true"></i>
@@ -169,22 +169,23 @@
                                         <i class="fas fa-star hostingMainCardGradeIcon" data-active="false"
                                             aria-hidden="true"></i>
                                     </div>
-                                    <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-                                </div>
+
+                        </div>
                     </a>
+
+
                 </article>
                 <article class="property-card">
                     <a href="#">
 
-                        <div class="property-image">
-                            <img src="./src/IMG/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+
+                        <img class="property-image"
+                            src="./src/IMG/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+                        <div href="#" class="property-description">
+                            <h5>Auberge de la mer </h5>
+                            <p>Nuit à partir de <strong>46€</strong></p>
                         </div>
-                    </a>
-                    <a href="#" class="property-description">
-                        <h5>Auberge de la mer </h5>
-                        <p>Nuit à partir de <strong>46€</strong></p>
-                    </a>
-                    <a href="#">
+
                         <div class="property-social-icons">
                             <div class="hostingMainCardGrade">
                                 <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
@@ -201,20 +202,21 @@
                             <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
                         </div>
                     </a>
+
+
                 </article>
                 <article class="property-card">
                     <a href="#">
 
-                        <div class="property-image">
-                            <img src="./src/IMG/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
 
+                        <img class="property-image"
+                            src="./src/IMG/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+
+                        <div href="#" class="property-description">
+                            <h5> Auberge Le Panier </h5>
+                            <p>Nuit à partir de <strong>23€</strong></p>
                         </div>
-                    </a>
-                    <a href="#" class="property-description">
-                        <h5> Auberge Le Panier </h5>
-                        <p>Nuit à partir de <strong>23€</strong></p>
-                    </a>
-                    <a href="#">
+
                         <div class="property-social-icons">
                             <div class="hostingMainCardGrade">
                                 <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
@@ -230,20 +232,21 @@
                             </div>
                             <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
                         </div>
+
                     </a>
+
                 </article>
                 <article class="property-card">
                     <a href="#">
 
-                        <div class="property-image">
-                            <img src="./src/IMG/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+
+                        <img class="property-image"
+                            src="./src/IMG/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                        <div href="#" class="property-description">
+                            <h5>Hôtel chez Amina </h5>
+                            <p>Nuit à partir de <strong>96€</strong></p>
                         </div>
-                    </a>
-                    <a href="#" class="property-description">
-                        <h5>Hôtel chez Amina </h5>
-                        <p>Nuit à partir de <strong>96€</strong></p>
-                    </a>
-                    <a href="#">
+
                         <div class="property-social-icons">
                             <div class="hostingMainCardGrade">
                                 <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
@@ -259,7 +262,9 @@
                             </div>
                             <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
                         </div>
+
                     </a>
+
                 </article>
 
                 <a class="afficherPlus" href="#">Afficher plus</a>
@@ -290,11 +295,16 @@
                             <p class="hostingMainCardDesc">Nuit à partir de <strong class="">128€</strong></p>
                             <div class="asidePopContentWhitespace"></div>
                             <div class="hostingMainCardGrade">
-                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
-                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
-                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
-                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
-                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true" aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
+                                <i class="fas fa-star hostingMainCardGradeIcon" data-active="true"
+                                    aria-hidden="true"></i>
                             </div>
                         </div>
                     </a>
@@ -303,8 +313,7 @@
                     <a class="hostingPopularWrapcontent" href="#">
                         <div class="hostingPopularWrapimg">
                             <img class="hostingPopularWrapimgimg"
-                                src="./src/IMG/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                                alt="">
+                                src="./src/IMG/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                         </div>
                         <div class="asidePopContent">
                             <h3 class="hostingMainCardFigureCaptionTitle">Au coeur de l'eau Chambres d'hôtes</h3>
@@ -329,8 +338,7 @@
                     <a class="hostingPopularWrapcontent" href="#">
                         <div class="hostingPopularWrapimg">
                             <img class="hostingPopularWrapimgimg"
-                                src="./src/IMG/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                                alt="">
+                                src="./src/IMG/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                         </div>
                         <div class="asidePopContent">
                             <h3 class="hostingMainCardFigureCaptionTitle">Hôtel Tout bleu et Blanc</h3>
@@ -365,7 +373,7 @@
         <!-- Activités  -->
 
         <section class="activity" id="activity">
-            <h2 class="activityTitle">Activités à Marseille</h2>
+            <h2 class="activityTitle" id="activity">Activités à Marseille</h2>
             <a href="#" class="activityCard activityCard1">
                 <div class="activityCardWrapimg">
                     <img class="activityCardWrapimgImg"

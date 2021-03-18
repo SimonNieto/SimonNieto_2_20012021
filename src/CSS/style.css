@@ -79,10 +79,10 @@ a {
   color: #555;
   font-weight: 500;
 }
-/* .activeHover[data-active="true"] {
+ .activeHover[data-active="true"] {
   border-top: 3px solid #0065fc;
   color: #0065fc;
-} */
+} 
 .headNav a:hover {
   border-top: 3px solid #0065fc;
   color: #0065fc;
@@ -132,13 +132,11 @@ h2 {
   font-size: 14px;
 }
 
-/* End Non-Essential  */
 
 .property-card {
   /* height: 18em;
   width: 14em; */
   /* position: relative; */
-  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 0 16px #0000002e;
   border: 6px solid rgba(255, 255, 255, 0.95);
@@ -146,10 +144,9 @@ h2 {
   background-color: white;
   height: 100%;
 }
-/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
-
-/* Top Half of card, image. */
-
+.property-card:hover{
+  box-shadow: 0 0 20px#494949;
+}
 .property-image {
   height: 7rem;
   object-fit: cover;
@@ -163,12 +160,10 @@ h2 {
 /* Social Icons */
 
 .property-social-icons {
-  width: 1em;
-  height: 0em;
+  
   color: #0065fc;
 
-  bottom: 0.1em;
-  left: 0.2em;
+
   -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -316,11 +311,16 @@ button {
   display: flex;
   align-items: center;
   margin-right: 2rem;
+  margin-bottom: 1rem;
   border: 2px solid #d9d9d9;
   border-radius: 2rem;
   cursor: pointer;
   font-weight: bold;
 }
+.searchFilter:hover{
+background-color: #f2f2f2;
+}
+
 .containeurFooter {
   display: flex;
   max-width: 100%;
@@ -428,6 +428,13 @@ h1 {
   margin-top: 2rem;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 650px){
+  .titreSearch {
+    width: 100%;
+}
+}
+
+
 
 .searchFiltersicon {
   margin-right: 1rem;
@@ -466,7 +473,12 @@ h1 {
   cursor: pointer;
   box-sizing: border-box;
   height: 100%;
+  
 }
+.hostingPopCard:hover{
+  box-shadow: 0 0 20px #494949ba;
+}
+
 
 .hostingPopularWrapcontent {
   display: flex;
@@ -659,10 +671,10 @@ h1 {
     grid-template-columns: auto 1fr auto auto;
     grid-template-areas: "logo . navbar button";
   }
-  .activeHover[data-active="true"] {
+  /* .activeHover[data-active="true"] {
     border-top: 3px solid #0065fc;
     color: #0065fc;
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -682,17 +694,17 @@ h1 {
     order: 2;
   }
   .activeHover {
-    border-top: none;
+    border-top: none !important;
     border-bottom: 3px solid #f2f2f2;
     width: 50%;
   }
-  .activeHover[data-active="true"] {
+  .activeHover:hover {
     border-bottom-color: #0065fc;
   }
   .activeHover:hover {
     border-bottom-color: #0065fc;
   }
-}
+} 
 
 @media (max-width: 650px) {
   .hebergementGrid {
